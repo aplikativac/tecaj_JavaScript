@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Obrazac</title>
+    <script type="text/javascript" src="obrazac12.js"></script>
+    <link rel="stylesheet" href="obrazac.css" />
+</head>
+
+<body>
+    <form 
+       action="http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl"         
+       method="GET">
+        <div>
+            <label for="ime">Unesite ime:</label>        
+            <input 
+                type="text" 
+                name="ime" 
+                id="ime" 
+                value="" />
+        </div>
+        <div>
+            <label for="prezime">Unesite prezime:</label>
+            <input 
+                type="text" 
+                name="prezime" 
+                id="prezime" 
+                value="" />
+        </div>
+        <div>
+            <label for="komp">Računalo:</label>        
+            <input 
+                type="radio" 
+                name="komp" 
+                value="stolno" /> Stolno
+            <input 
+                type="radio" 
+                name="komp" 
+                value="prijenosno" /> Prijenosno
+        </div>
+        <div>
+            <label>
+            <input 
+                type="checkbox" 
+                name="internet" 
+                id="internet" 
+                value="sirokopojasni">
+            Pristup Internetu je DSL tehnologijom.</label>
+        </div>
+        <div>
+            <label for="os">Operacijski sustav:</label>
+            <select name="os" id="os">
+                <option value="nt4">Windows NT 4</option>
+                <option value="w2k">Windows 2000</option>
+                <option value="xp">Windows XP</option>            
+                <option value="vista">Windows Vista</option>            
+                <option value="win7">Windows 7</option>
+                <option value="win8">Windows 8</option>
+            </select>
+        </div>
+        <input 
+            type="submit" 
+            value="Pošalji" 
+            onclick="return provjeri();" />
+    </form>
+</body>
+
+</html>

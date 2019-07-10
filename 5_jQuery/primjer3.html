@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery primjer 3</title>
+</head>
+<body>
+   <h3 class="naslov">Naslov</h3>
+    <ul>
+        <li>stavka 1</li>
+        <li>stavka 2</li>
+        <li>stavka 3</li>
+        <li>stavka 4</li>
+        <li>stavka 5</li>
+    </ul>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $('li').on('click', function(){
+        $('.naslov').css('color', 'green');
+    });
+    </script>    
+</body>
+</html>

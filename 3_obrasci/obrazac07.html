@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Obrazac</title>
+    <script type="text/javascript" src="obrazac07.js"></script>
+    <link rel="stylesheet" href="obrazac.css" />
+</head>
+
+<body>
+    <form 
+       action="http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl"         
+       method="GET">
+        <div>
+            <label for="ime">Unesite ime:</label>        
+            <input 
+                type="text" 
+                name="ime" 
+                id="ime" 
+                value="" />
+        </div>
+        <div>
+            <label for="prezime">Unesite prezime:</label>
+            <input 
+                type="text" 
+                name="prezime" 
+                id="prezime" 
+                value="" />
+        </div>
+        <input 
+            type="submit" 
+            value="Pošalji" 
+            onclick="return provjeri();" />
+    </form>
+</body>
+
+</html>

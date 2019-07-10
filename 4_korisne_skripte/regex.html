@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Primjer</title>
+        <script src="regex.js" language="JavaScript">
+        </script>
+
+    </head>
+
+    <body onload="document.getElementById('ime').focus()">
+        <form name="frm_regex" action="">
+           <div>
+            Ime i prezime
+            <input 
+                type="text" 
+                name="ime" 
+                id="ime" 
+                value="" 
+                onblur="test(this.value, this, '^[a-zA-ZčžćšđČŽŠĆĐ -]+$');" />
+            </div>
+            <div>
+            Telefonski broj
+            <input 
+                type="text" 
+                name="telefon" 
+                id="telefon" 
+                value="" 
+                onblur="test(this.value, 
+                    this, 
+                    '^(0([0-9]{1,2})( |\/))?[1-9][0-9]{2,3}\-?[0-9]{3}$');" />
+            </div>
+            <input type="button" value="Provjeri" onClick="provjeri();" />        
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Obrazac</title>                  
+    <link rel="stylesheet" href="obrazac.css" />
+</head>
+
+<body>
+    <form 
+       action="http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl"         
+       method="GET"
+       id="obrazac1">
+        <div>
+            <label for="ime">Unesite ime:</label>        
+            <input 
+                type="text" 
+                name="ime" 
+                id="ime" 
+                value="" />
+        </div>
+        <div>
+            <label for="prezime">Unesite prezime:</label>
+            <input 
+                type="text" 
+                name="prezime" 
+                id="prezime" 
+                value="" />
+        </div>
+        <div>
+            <label for="komp">Računalo:</label>                    
+            <input 
+                type="radio" 
+                name="komp" 
+                value="stolno" />Stolno
+            <input 
+                type="radio" 
+                name="komp" 
+                value="prijenosno" />Prijenosno 
+            
+        </div>
+        <div>
+            <label>
+            <input 
+                type="checkbox" 
+                name="internet" 
+                id="internet" 
+                value="sirokopojasni">
+            Pristup Internetu je DSL tehnologijom.</label>
+        </div>
+        <div>
+            <label for="os">Operacijski sustav:</label>
+            <select 
+               name="os" 
+               id="os"> 
+                <option value="nt4">Windows NT 4</option>
+                <option value="w2k">Windows 2000</option>
+                <option value="xp">Windows XP</option>            
+                <option value="vista">Windows Vista</option>            
+                <option value="win7" selected="selected">Windows 7</option>
+                <option value="win8">Windows 8</option>
+            </select>
+        </div>
+        <div>
+            <label for="srv_pack">Service pack:</label>
+            <select 
+                name="srv_pack" 
+                id="srv_pack">
+                <option value="nema" class="nt4">(Nema)</option>
+                <option value="sp1" class="nt4">Service Pack 1</option>
+                <option value="sp2" class="nt4">Service Pack 2</option>
+                <option value="sp3" class="nt4">Service Pack 3</option>
+                <option value="sp4" class="nt4">Service Pack 4</option>
+                <option value="sp5" class="nt4">Service Pack 5</option>
+                <option value="sp6" class="nt4">Service Pack 6</option>
+                <option value="sp6a" class="nt4">Service Pack 6a</option>
+                
+                <option value="nema" class="w2k">(Nema)</option>
+                <option value="sp1" class="w2k">Service Pack 1</option>
+                <option value="sp2" class="w2k">Service Pack 2</option>
+                <option value="sp3" class="w2k">Service Pack 3</option>
+                <option value="sp4" class="w2k">Service Pack 4</option>
+                <option value="sp4upd" class="w2k">Service Pack 4 &amp; Updates</option>
+                
+                <option value="nema" class="xp">(Nema)</option>
+                <option value="sp1" class="xp">Service Pack 1</option>
+                <option value="sp2" class="xp">Service Pack 2</option>
+                <option value="sp3" class="xp">Service Pack 3</option>
+                                
+                <option value="nema" class="vista">(Nema)</option>
+                <option value="sp1" class="vista">Service Pack 1</option>
+                <option value="sp2" class="vista">Service Pack 2</option>
+                
+                <option value="nema" class="win7">(Nema)</option>
+                <option value="sp1" class="win7" selected="selected">Service Pack 1</option>
+                                
+                <option value="nema" class="win8">(Nema)</option>
+                <option value="8.1" class="win8">8.1</option>
+                <option value="8.1u1" class="win8">8.1 Update 1</option>
+            </select>
+        </div>
+        <input 
+            type="submit" 
+            value="Pošalji" />
+    </form>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.chained/0.9.9/jquery.chained.js"></script>           
+    <script type="text/javascript" src="obrazac.js"></script>        
+</body>
+
+</html>

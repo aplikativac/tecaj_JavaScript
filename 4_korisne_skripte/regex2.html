@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Primjer</title>    
+    <script src="regex2.js" language="JavaScript">
+    </script>
+
+    </head>
+    <body onload="document.getElementById('ime').focus()">
+    <form name="frm_regex" action="">
+       <div>
+        Ime i prezime
+        <input type="text" name="ime" value=""
+            onblur="this.value = test(
+            this.value,
+            this,
+            '^[a-zA-ZčžćšđČŽŠĆĐ -]+$',
+            '^[a-zA-ZčžćšđČŽŠĆĐ -]$',
+            'Ime i prezime su nepravilnog oblika!\nDozvoljena su samo slova!');" />
+        </div>
+        <div>
+        Telefonski broj
+        <input type="text" name="telefon" value="" 
+            onblur="this.value = test(
+                this.value, 
+                this, 
+                '^(0([0-9]{1,2})( |\/))?[1-9][0-9]{2,3}\-?[0-9]{3}$', '[0-9 -\/]', 
+                'Tel. broj je nepravilnog formata (0XX/YYYY-YYY)!');" />
+        </div>
+        <input type="button" value="Provjeri" onclick="provjeri();" />    
+    </form>
+    </body>
+</html>
