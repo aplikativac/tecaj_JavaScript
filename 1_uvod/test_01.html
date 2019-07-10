@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        var iBroj = 1,
+            sNiz1 = 'Niz znakova',
+            sNiz2 = '3.14',
+            sNiz3 = 'U dva<br />retka!',
+            bLogicka = true;
+
+        document.write('Broj: ' + iBroj + '<br />');
+        document.write('Niz 1: ' + sNiz1 + '<br />');
+        document.write('Niz 2: ' + sNiz2 + '<br />');
+        document.write('Niz 3: ' + sNiz3 + '<br />');
+        document.write('Logička: ' + bLogicka + '<br />');
+
+        document.writeln('bv: ' + 5 ** 2 + '<br />');
+
+
+        bLogicka = false;
+
+        document.write('Logička: ' + bLogicka + '<br />');
+    </script>
+
+    <script>
+        var iGlobalna1 = 10;
+        iGlobalna2 = 34;
+
+        // dostupne su iGlobalna1 i iGlobalna2
+
+        function funkcija1() {
+            var iLokalna1 = 4;
+            iGlobalna3 = 15;
+            // dostupne su iGlobalna1, iGlobalna2 i iLokalna1
+        }
+
+        // dostupne su iGlobalna1 i iGlobalna2
+        function funkcija2() {
+            var iLokalna2 = 7;
+            // dostupne su iGlobalna1, iGlobalna2 i iLokalna2
+        }
+    </script>
+</body>
+
+</html>
